@@ -50,6 +50,7 @@ public:
   MOCK_METHOD(const std::string&, serialNumberPeerCertificate, (), (const));
   MOCK_METHOD(const std::string&, issuerPeerCertificate, (), (const));
   MOCK_METHOD(const std::string&, subjectPeerCertificate, (), (const));
+  MOCK_METHOD(const ParsedX509NameConstSharedPtr&, parsedSubjectPeerCertificate, (), (const));
   MOCK_METHOD(absl::Span<const std::string>, uriSanPeerCertificate, (), (const));
   MOCK_METHOD(const std::string&, subjectLocalCertificate, (), (const));
   MOCK_METHOD(const std::string&, urlEncodedPemEncodedPeerCertificate, (), (const));
